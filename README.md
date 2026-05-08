@@ -45,7 +45,7 @@ To evaluate the performance of HHTS on high-resolution satellite data, we conduc
 *   **Boundary Precision:** HHTS achieves significantly higher **Boundary Recall (BR)** and **Explained Variation (EV)**, indicating it captures physical terrain boundaries with much higher fidelity than the grid-constrained SLIC.
 *   **Metric Trade-offs:** While SLIC is optimized for speed and produces more **compact (CO)** segments, HHTS prioritizes internal homogeneity (**ICV**), resulting in superpixels that better represent distinct land-cover classes.
 
-## 4.2 Validation: Berkeley Segmentation Dataset 500 (BSDS500)
+### 4.2 Validation: Berkeley Segmentation Dataset 500 (BSDS500)
 To validate our implementation, we conducted a large-scale experiment on the **BSDS500 test set** (200 images). This experiment was specifically designed to verify that our code reproduces performance curves reported in the original HHTS research paper.
 
 ### Performance Curves
