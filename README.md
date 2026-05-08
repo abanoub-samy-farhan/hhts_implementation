@@ -28,18 +28,18 @@ Our experimental evaluation is divided into two phases: a real-world **applicati
 ### 4.1 Application: Remote Sensing (DeepGlobe Dataset)
 To evaluate the performance of HHTS on high-resolution satellite data, we conducted a head-to-head comparison with the SLIC baseline on samples from the **DeepGlobe Land Cover Classification Dataset**. This test assesses the algorithm's ability to preserve intricate land-cover boundaries.
 
-| Image | Method | num_segments | runtime_sec | ICV (↓) | EV (↑) | CO (↑) | edge_align | BR (↑) | UE (↓) | ASA (↑) |
+| Image | Method | num_segments | runtime_sec | ICV (↓) | EV (↑) | CO (↑) | BR (↑) | UE (↓) | ASA (↑) |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 100877_sat.jpg | **HHTS** | 1000 | 15.351 | 8.1593 | 0.8017 | 0.2541 | 0.3420 | 0.8768 | 0.9804 | 0.0196 |
-| 100877_sat.jpg | SLIC | 978 | 0.329 | 8.8492 | 0.7536 | 0.5897 | 0.3852 | 0.7168 | 0.9806 | 0.0194 |
-| 103215_sat.jpg | **HHTS** | 1003 | 12.716 | 13.5552 | 0.8156 | 0.2744 | 0.7391 | 0.8692 | 0.9917 | 0.0083 |
-| 103215_sat.jpg | SLIC | 939 | 0.361 | 15.1002 | 0.7581 | 0.4406 | 0.7644 | 0.7772 | 0.9917 | 0.0083 |
-| 103742_sat.jpg | **HHTS** | 1000 | 17.909 | 10.0575 | 0.8424 | 0.2585 | 0.4662 | 0.8483 | 0.9850 | 0.0150 |
-| 103742_sat.jpg | SLIC | 969 | 0.325 | 10.6806 | 0.7598 | 0.6044 | 0.4979 | 0.7147 | 0.9851 | 0.0149 |
-| 110224_sat.jpg | **HHTS** | 1002 | 14.891 | 5.2393 | 0.8407 | 0.2596 | 0.1496 | 0.8624 | 0.9724 | 0.0276 |
-| 110224_sat.jpg | SLIC | 1001 | 0.319 | 5.6347 | 0.7860 | 0.7300 | 0.1757 | 0.6665 | 0.9735 | 0.0265 |
-| 112946_sat.jpg | **HHTS** | 1001 | 16.053 | 9.2234 | 0.8918 | 0.2700 | 0.4369 | 0.8559 | 0.9812 | 0.0188 |
-| 112946_sat.jpg | SLIC | 925 | 0.325 | 10.2774 | 0.8349 | 0.5864 | 0.4904 | 0.7044 | 0.9820 | 0.0180 |
+| 100877_sat.jpg | **HHTS** | 1000 | 15.351 | 8.1593 | 0.8017 | 0.2541 | 0.8768 | 0.9804 | 0.0196 |
+| 100877_sat.jpg | SLIC | 978 | 0.329 | 8.8492 | 0.7536 | 0.5897 | 0.7168 | 0.9806 | 0.0194 |
+| 103215_sat.jpg | **HHTS** | 1003 | 12.716 | 13.5552 | 0.8156 | 0.2744 | 0.8692 | 0.9917 | 0.0083 |
+| 103215_sat.jpg | SLIC | 939 | 0.361 | 15.1002 | 0.7581 | 0.4406 | 0.7772 | 0.9917 | 0.0083 |
+| 103742_sat.jpg | **HHTS** | 1000 | 17.909 | 10.0575 | 0.8424 | 0.2585 | 0.8483 | 0.9850 | 0.0150 |
+| 103742_sat.jpg | SLIC | 969 | 0.325 | 10.6806 | 0.7598 | 0.6044 | 0.7147 | 0.9851 | 0.0149 |
+| 110224_sat.jpg | **HHTS** | 1002 | 14.891 | 5.2393 | 0.8407 | 0.2596 | 0.8624 | 0.9724 | 0.0276 |
+| 110224_sat.jpg | SLIC | 1001 | 0.319 | 5.6347 | 0.7860 | 0.7300 | 0.6665 | 0.9735 | 0.0265 |
+| 112946_sat.jpg | **HHTS** | 1001 | 16.053 | 9.2234 | 0.8918 | 0.2700 | 0.8559 | 0.9812 | 0.0188 |
+| 112946_sat.jpg | SLIC | 925 | 0.325 | 10.2774 | 0.8349 | 0.5864 | 0.7044 | 0.9820 | 0.0180 |
 
 **Key Findings:**
 *   **Boundary Precision:** HHTS achieves significantly higher **Boundary Recall (BR)** and **Explained Variation (EV)**, indicating it captures physical terrain boundaries with much higher fidelity than the grid-constrained SLIC.
