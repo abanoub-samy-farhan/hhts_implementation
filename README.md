@@ -29,7 +29,7 @@ Our experimental evaluation is divided into two phases: a real-world **applicati
 To evaluate the performance of HHTS on high-resolution satellite data, we conducted a head-to-head comparison with the SLIC baseline on samples from the **DeepGlobe Land Cover Classification Dataset**. This test assesses the algorithm's ability to preserve intricate land-cover boundaries.
 
 | Image | Method | num_segments | runtime_sec | ICV (↓) | EV (↑) | CO (↑) | BR (↑) | UE (↓) | ASA (↑) |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 100877_sat.jpg | **HHTS** | 1000 | 15.351 | 8.1593 | 0.8017 | 0.2541 | 0.8768 | 0.9804 | 0.0196 |
 | 100877_sat.jpg | SLIC | 978 | 0.329 | 8.8492 | 0.7536 | 0.5897 | 0.7168 | 0.9806 | 0.0194 |
 | 103215_sat.jpg | **HHTS** | 1003 | 12.716 | 13.5552 | 0.8156 | 0.2744 | 0.8692 | 0.9917 | 0.0083 |
