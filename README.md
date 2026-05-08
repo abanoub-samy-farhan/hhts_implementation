@@ -36,6 +36,6 @@ Our implementation proves that a hierarchical, histogram-based approach is super
 *   Integrating deep learning features into the priority queue to prioritize specific object classes (e.g., "always split roads first").
 
 ## References
-1.  [Riedel et al., "Hierarchical Histogram Threshold Segmentation – Auto-terminating High-detail Oversegmentation," 2023.](https://ieeexplore.ieee.org/document/10303038)
+1.  [Riedel et al., "Hierarchical Histogram Threshold Segmentation – Auto-terminating High-detail Oversegmentation," 2023.](https://openaccess.thecvf.com/content/CVPR2024/papers/Chang_Hierarchical_Histogram_Threshold_Segmentation_-_Auto-terminating_High-detail_Oversegmentation_CVPR_2024_paper.pdf)
 2.  [BSDS500 Dataset](https://www.kaggle.com/datasets/balraj98/berkeley-segmentation-dataset-500-bsds500)
-3.  [DeepGlobe Land Cover Classification Dataset]([https://deepglobe.com/](https://www.kaggle.com/datasets/balraj98/deepglobe-land-cover-classification-dataset))
+3.  [DeepGlobe Land Cover Classification Dataset](https://www.kaggle.com/datasets/balraj98/deepglobe-land-cover-classification-dataset)
