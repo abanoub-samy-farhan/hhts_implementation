@@ -1,2 +1,27 @@
-# hhts_implementation
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/AbdallahAdel/HTTS_implementation)
+# Hierarchical Histogram Threshold Segmentation (HHTS)
+### Superpixel Segmentation for Satellite and Natural Imagery
+[**Live Demo**](https://huggingface.co/spaces/AbdallahAdel/HTTS_implementation) | [**Project Notebook**](https://www.kaggle.com/code/abdallahadelabdallah/hhts-implementation)
+
+---
+
+## Abstract
+Superpixel segmentation is a fundamental preprocessing step in computer vision, yet traditional methods like SLIC often smooth over critical irregular boundaries. This project implements Hierarchical Histogram Threshold Segmentation (HHTS), an iterative top-down approach that utilizes 1D Laplace filtering and Cauchy-weighted thresholding to identify precise intensity clusters. To ensure the fidelity of our implementation, we validated its performance on the BSDS500 benchmark, achieving results consistent with the original paper. We also demonstrate the approach's application on satellite imagery using the DeepGlobe Land Cover Classification dataset.
+
+---
+
+## HHTS Implementation
+Our project focuses on a robust implementation of the HHTS algorithm, a "divide and conquer" strategy for image partition. Unlike standard clustering methods that force pixels into a grid, HHTS treats the image as a global collection of evolving segments.
+
+### Key Logic:
+*   **Global Priority Selection:** The algorithm maintains a priority queue of segments, always choosing the largest and most "complex" (highest variance) segment to split next.
+*   **Intelligent Thresholding:** By analyzing the color distribution (histogram) of a specific segment, the algorithm identifies the most significant boundaries between object classes.
+*   **Spatial Connectivity:** After every split, the algorithm ensures that resulting segments are physically connected. It includes a cleanup phase where "tiny" fragments (below 64 pixels) are merged into larger neighboring regions to maintain meaningful segmentation.
+*   **Multi-Channel Support:** To ensure no detail is missed, the implementation calculates variance across 9 different color channels, including RGB, HSV, and LAB color spaces.
+
+---
+
+## Using HHTS for Remote-Sensing Superpixel Segmentation
+Remote sensing data (Satellite imagery) contains thin, complex features such as roads, rivers, and varying forest density. Traditional "compact" superpixels often merge these thin features into the background. HHTS excels here because its boundaries are driven by color clusters rather than spatial grids.
+
+![](https://github.com/abanoub-samy-farhan/hhts_implementation/blob/main/images/img1.jpeg)
+
