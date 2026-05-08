@@ -48,7 +48,7 @@ To evaluate the performance of HHTS on high-resolution satellite data, we conduc
 ### 4.2 Validation: Berkeley Segmentation Dataset 500 (BSDS500)
 To validate our implementation, we conducted a large-scale experiment on the **BSDS500 test set** (200 images). This experiment was specifically designed to verify that our code reproduces performance curves reported in the original HHTS research paper.
 
-### Performance Curves
+#### Performance Curves
 The following graphs illustrate the performance of HHTS versus SLIC across varying superpixel counts.
 
 ![BSDS500 Benchmark Graphs](https://github.com/abanoub-samy-farhan/hhts_implementation/blob/main/images/BSDS500_results.png)
